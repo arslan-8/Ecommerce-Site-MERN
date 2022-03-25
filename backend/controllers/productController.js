@@ -5,7 +5,9 @@ const ApiFeatures = require('../utils/apifeatures');
 const { resource } = require('../app');
 
 // Create Product  --  Admin
-exports.createProduct = catchAsyncErrors(async (req,res,next)=>{
+exports.createProduct = catchAsyncErrors(async (req,res,next) => {
+
+    req.body.user = req.user.id;
     
     const product = await Product.create(req.body);
 
@@ -98,3 +100,9 @@ exports.deleteProduct = catchAsyncErrors(async (req, res, next) => {
         message: 'Product Deleted Successfully'
     })
 }); 
+
+
+// Create new review or update the review
+// exports.createProductReview = catchAsyncErrors(async (req, res, next) => {
+
+// })
