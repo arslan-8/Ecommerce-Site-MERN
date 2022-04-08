@@ -1,0 +1,23 @@
+
+For Authentication:
+npm i bcryptjs jsonwebtoken validator nodemailer cookie-parser body-parser
+
+For Frontend:
+cd frontend
+npx create-react-app .
+
+npm i axios react-alert react-alert-template-basic react-helmet react-redux redux redux-thunk redux-devtools-extension react-router-dom overlay-navbar
+npm install react-icons 
+npm i webfontloader
+
+//for ratings
+npm i react-rating-stars-component
+
+// for pagination
+npm i react-js-pagination
+
+// express-fileupload
+// Simple express middleware for uploading files.
+npm i express-fileupload cloudinary
+
+npm i @mui/material
